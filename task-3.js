@@ -1,5 +1,11 @@
 "use strict";
 function checkForSpam(message){
+    if (message.includes("spam") || message.includes("sale")){
+        return `false`;
+    }
+    else {
+        return `true`;
+    }
 
 }
 

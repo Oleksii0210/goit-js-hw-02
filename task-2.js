@@ -1,6 +1,12 @@
 "use strict";
 function formatMessage(message, maxLength){
-
+let kilk = massage.length;
+ if (kilk <= maxLength){
+    return kil + ;
+ }
+else (kilk => maxLength);{
+return re;
+}
 }
 
 console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
