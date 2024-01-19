@@ -1,10 +1,10 @@
 "use strict";
 function checkForSpam(message){
-    if (message.includes("spam") || message.includes("sale")){
-        return `true`;
+    if (message.toLowerCase().includes("spam") || message.toLowerCase().includes("sale") ){
+        return true;
     }
     else {
-        return `false`;
+        return false;
     }
 
 }
@@ -15,15 +15,6 @@ console.log(checkForSpam("Get best sale offers now!")); // true
 console.log(checkForSpam("Amazing SalE, only tonight!")); // true
 console.log(checkForSpam("Trust me, this is not a spam message")); // true
 console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); // true
-console.log(checkForSpam("[SPAM] How to earn fast money?")); // 
+console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
 
-
-function calculateTotal(number) {
-    let counter = 0;
-    let sun = 0;
-    while (counter < number) {
-      counter  += 1;
-      sun = sun + counter;
-    }
-    return sun;
-  }
+//|| message.includes("SalE") || message.includes("[SPAM]"
